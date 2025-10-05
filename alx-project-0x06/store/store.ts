@@ -22,11 +22,11 @@ const store = configureStore({
   }
 });
 
-export const { increment, decrement } = counterSlice.actions;
+export const { increment, decrement } = counterSlice.actions
 
-export type RootState = ReturnType<typeof store.getState>;
-export type AppDispatch = typeof store.dispatch;
+export type RootState = ReturnType<typeof store.getState>
+export type AppDispatch = typeof store.dispatch
 
-export const useAppDispatch = () => useDispatch<AppDispatch>();
+export const useAppDispatch = () => useDispatch<AppDispatch>()
 
-export default store;
+export default store
